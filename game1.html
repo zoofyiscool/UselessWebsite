@@ -10,6 +10,15 @@ canvas {
 </style>
 </head>
 <body onload="startGame()">
+    
+ <!--Navigation Bar-->
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="game1.html">Fun Game</a>
+          </div> 
 <script>
 
 var myGamePiece;
@@ -17,7 +26,7 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGamePiece = new component(50, 100, "red", 10, 120);
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
@@ -132,6 +141,6 @@ function accelerate(n) {
 <br>
 <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
 <p>Use the ACCELERATE button to stay in the air</p>
-<p>How long can you stay alive?</p>
+<i>taken from w3schools</i>
 </body>
 </html>
